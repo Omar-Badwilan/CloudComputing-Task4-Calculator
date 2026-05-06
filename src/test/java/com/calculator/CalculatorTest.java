@@ -99,4 +99,10 @@ class CalculatorTest {
         );
         assertEquals("Division by zero is not allowed", ex.getMessage());
     }
+
+    @Test
+    @DisplayName("deliberate failure: observe test failure behavior")
+    void deliberate_failure_for_observation() {
+        fail("This test is designed to fail intentionally.");
+    }
 }
